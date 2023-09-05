@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+:root{
+    --colorBtn : #e50914;
+    --colorBtnH : #ff3a47;
+}
+
+h1{
+    font-size: 36px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-img-background img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+}
+
+
+.container{
+    position: relative;
+    width: 27.5rem;
+    height: 31.25rem;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: .625rem;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 50px;
+}
+
+.container-form-inputs{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+input[type="email"],input[type="password"]{
+    width: 18.75rem;
+    height: 48px;
+    margin: 10px;
+    border-radius: .3125rem;
+    border: none;
+    padding-left: 15px;
+    font-size: 16px;
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+
+button[type="submit"]{
+    width: 19.6875rem;
+    height: 48px;
+    margin: 10px;
+    background-color: var(--colorBtn);
+    color: rgb(245, 245, 245);
+    border: none;
+    border-radius: .3125rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover{
+    background-color: var(--colorBtnH);
+}
+
+
+
+.container-form-inputs-check{
+    display: flex;
+    width: 100%;
+    position: relative;
+    font-size: 15px;
+    color: #b3b3b3d3;
+    gap: 84px;
+    justify-content: center;
+    align-items: center;
+    padding-top: .625rem;
+}
+
+
+
+
+
+.container-form-inputs-checbox-a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #b3b3b3d3;
+}
+
+.container-form-h1{
+    user-select: none;
+    font-size: 2.7rem;
+    margin: 0;
+    color: var(--colorBtn);
+}
