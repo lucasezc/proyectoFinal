@@ -122,3 +122,8 @@ button[type="submit"]{
     color: rgba(75, 117, 196, 0.89);
 }
 
+
+
+#error{
+    color: #e50914;
+}

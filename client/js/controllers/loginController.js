@@ -27,8 +27,32 @@ document.addEventListener("DOMContentLoaded", function () {
     if (email) {
         emailSpan.textContent = email;
     }
+    
 });
 
+
+
+//Crontraseña mayor a 5 caracteres
+
+document.addEventListener("DOMContentLoaded", function () {
+    const inputPw = document.getElementById("inputPw");
+    const btnSubmit = document.getElementById("btnSubmit");
+    const errorElement = document.getElementById("error");
+
+    btnSubmit.addEventListener("click", function (event) {
+        const createdPw = inputPw.value;
+
+        
+        if (createdPw.length < 5) {
+            errorElement.textContent = "La contraseña debe tener al menos 5 caracteres.";
+            event.preventDefault();
+        } else {
+            event.preventDefault();
+            console.log(createdPw);
+            
+        }
+    });
+});
 
 
 
