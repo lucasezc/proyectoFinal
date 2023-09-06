@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    background-color: rgb(247, 247, 247);
+}
+
+:root{
+    --colorBtn : #e50914;
+    --colorBtnH : #ff3a47;
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+hr{
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 600px;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.header-container-h1 a{
+    color: var(--colorBtn);
+    font-size: 50px; 
+    text-decoration: none;
+}
+
+.header-container-a a{
+    font-size: 18px;
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    
+}
+
+.header-container-a a:hover{
+    border-bottom: 1px solid black;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.div-container-text{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    width: 500px;
+    height: 220px;
+    padding-top: 50px;
+}
+
+.div-container-text h2{
+    color: rgb(63, 62, 62);
+    font-size: 34px;
+}
+
+.div-container-text h3{
+    color: rgb(63, 62, 62);
+    font-size: 30px;
+}
+
+.div-container-text p{
+    font-size: 20px;
+}
+
+.div-container-form{
+    width: 500px;
+    height: 250px;
+}
+
+.div-container-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+input[type="password"]{
+    width: 500px;
+    height: 55px;
+    padding-left: 10px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+button[type="submit"]{
+    width: 500px;
+    height: 60px;
+    font-size: 20px;
+    background-color: var(--colorBtn);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(75, 117, 196, 0.89);
+}
+

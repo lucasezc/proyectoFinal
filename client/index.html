@@ -45,13 +45,13 @@
                 <p class="main-container-div-p">No pierdas más tiempo, únete a nosotros.</p>
                 <p class="main-container-div-p-2">¿Quieres ver PelisFree ahora? Ingresa tu email para crear una cuenta
                     y obtener tu membresía totalmente gratuita.</p>
-                    <form class="main-container-form">
+                    <form class="main-container-form" id="registroForm" action="registro.html" method="get">
                     <div class="main-container-registro">
                         <div class="main-container-email-input">
-                            <input type="email" placeholder="Email" required>
+                            <input type="email" placeholder="Email" required id="email">
                         </div>
                         <div class="main-container-btn-comenzar">
-                            <button class="" type="submit">Comenzar <span class="main-container-btn-comenzar-btn-arrow">></span></button>
+                            <button class="" type="submit">Comenzar<span class="main-container-btn-comenzar-btn-arrow">></span></button>
                         </div>
                     </div>
                     </form>
@@ -72,5 +72,10 @@
 </body>
 
 
-<script src="../server/index.js"></script>
+<script src="js/controllers/loginController.js"></script>
+
+
+
+
+
 </html>

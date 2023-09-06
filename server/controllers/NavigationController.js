@@ -6,6 +6,12 @@ function goIndex(req, res){
 }
 
 
+function goLogin(req, res){
+    const filePath = path.join(__dirname, "../../client/login.html")
+}
+
+
 module.exports = {
     goIndex,
+    goLogin,
 }

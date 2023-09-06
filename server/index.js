@@ -1,13 +1,18 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const cors = require("cors");
+
 
 const navigationController = require('../server/controllers/NavigationController');
 
 //middlewares
-app.use(express.static(path.join(__dirname, './client')));
+app.use(express.static(path.join(__dirname, '../client')));
+app.use(cors());
 
 app.get('/', navigationController.goIndex);
+
+app.get("/login", navigationController.goLogin);
 
 
 app.listen(8080, () => {
