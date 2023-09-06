@@ -116,9 +116,9 @@ button[type="submit"]:hover{
     color: #b3b3b3d3;
 }
 
-.container-form-h1{
+.container-form-h2{
     user-select: none;
-    font-size: 2.7rem;
+    font-size: 1.7rem;
     margin: 0;
     color: var(--colorBtn);
 }
