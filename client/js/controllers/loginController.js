@@ -3,16 +3,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const emailInput = document.getElementById("email");
 
     registroForm.addEventListener("submit", function (event) {
-        event.preventDefault(); // Evita que se envíe el formulario
+        event.preventDefault(); // Evitamos que se envie el formulario
 
-        // Obtén el valor del correo electrónico
+        // Obtenemos el valor del correo electronico
         const email = emailInput.value;
 
         localStorage.removeItem("email");
-        // Almacena el correo electrónico en localStorage
+        // Almacena el correo electronico en localStorage
         localStorage.setItem("email", email);
 
-        // Redirige a la página de registro
+        // Redirige a la pagina de registro
         window.location.href = "registro.html";
     });
 });
@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const emailSpan = document.getElementById("emailSpan");
 
-    // Recupera el correo electrónico almacenado en localStorage
+    // Recupera el correo electronico almacenado en localStorage
     const email = localStorage.getItem("email");
 
-    // Muestra el correo electrónico en la página de registro
+    // Muestra el correo electronico en la pagina de registro
     if (email) {
         emailSpan.textContent = email;
     }
