@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const inputPw = document.getElementById("inputPw");
     const errorElement = document.getElementById("error");
     const emailSpan = document.getElementById("emailSpan");
-
+    const inputEmail = document.get
+1
     // Recupera el correo electronico almacenado en localStorage
     const email = localStorage.getItem("email");
 

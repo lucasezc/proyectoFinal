@@ -12,7 +12,10 @@ app.use(cors());
 
 app.get('/', navigationController.goIndex);
 
+
 app.get("/login", navigationController.goLogin);
+
+app.get("/registro",navigationController.goRegistro);
 
 
 app.listen(8080, () => {
