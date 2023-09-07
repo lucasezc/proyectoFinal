@@ -127,3 +127,7 @@ button[type="submit"]{
 #error{
     color: #e50914;
 }
+
+.error-message{
+    color: #e50914;
+}

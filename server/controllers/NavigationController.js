@@ -17,8 +17,18 @@ function goRegistro(req, res){
     res.sendFile(filePath);
 }
 
+function goRegistred(req, res){
+    const filePath = path.join(__dirname, "../../client/registred.html");
+}
+
+function goPelisFree(req, res){
+    const filePath = path.join(__dirname, "../../client/pelisFree.html");
+}
+
 module.exports = {
     goIndex,
     goLogin,
-    goRegistro
+    goRegistro,
+    goRegistred,
+    goPelisFree
 }

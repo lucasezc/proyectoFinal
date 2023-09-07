@@ -122,3 +122,7 @@ button[type="submit"]:hover{
     margin: 0;
     color: var(--colorBtn);
 }
+
+.error-message{
+    color: var(--colorBtn);
+}

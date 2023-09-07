@@ -20,7 +20,12 @@ app.get("/login", navigationController.goLogin);
 
 app.get("/registro",navigationController.goRegistro);
 
+app.get("/pelisFree.html", navigationController.goPelisFree);
+
 app.post("/api/registro", userController.create);
+
+app.post("/api/login", userController.login);
+
 
 app.listen(8080, () => {
     console.log('Servidor corriendo en puerto 8080');
