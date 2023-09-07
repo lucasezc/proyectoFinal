@@ -1,3 +1,4 @@
+const { default: mongoose } = require("mongoose");
 const {conectarDB, desconectarDB} = require("../db/conection");
 const User = require("../db/schemas/userSchema");
 
